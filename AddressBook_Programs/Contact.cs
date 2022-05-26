@@ -8,16 +8,32 @@ namespace AddressBook_Programs
 {
    public class Contact
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public int PostalCode { get; set; }
-        public long PhoneNumber { get; set; }
-        public string Email { get; set; }
+        // Declaring contact details properties
+        public string firstName;
+        public string lastName;
+        public string address;
+        public string city;
+        public string state;
+        public int PostalCode;
+        public long phoneNumber;
 
+        public string emailId;
+        public int postalCode;
+        public string email;
 
+        public Contact(string firstName, string lastName, string address, string city, string state, int PostalCode, long phoneNumber, string emailId)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.city = city;
+            this.state = state;
+            this.PostalCode = PostalCode;
+            this.phoneNumber = phoneNumber;
+            this.emailId = emailId;
+        }
     }
+
 }
+
 
